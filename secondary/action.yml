@@ -5,3 +5,4 @@ runs:
   using: "composite"
   steps:
   - run: echo "Secondary action"
+    shell: bash
