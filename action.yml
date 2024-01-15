@@ -12,9 +12,9 @@ outputs:
 
 runs:
   using: "composite"
-    steps:
-      - name: Setup Gradle
-        uses: gradle/gradle-build-action@main
+  steps:
+    - name: Setup Gradle
+      uses: gradle/gradle-build-action@main
 
 branding:
   icon: 'box'
