@@ -1,0 +1,7 @@
+name: Secondary action
+description: This is here to test GitHub actions in the marketplace
+
+runs:
+  using: "composite"
+  steps:
+  - run: echo "Secondary action"
