@@ -1,23 +1,12 @@
-name: Dazzas testing action
+name: Dazzas assorted test actions
 description: This is here to test GitHub actions in the marketplace
-
-inputs:
-  test-intput:
-    description: Test input parameter
-    required: false
-
-outputs:
-  test-output:
-    description: Test action output
 
 runs:
   using: "composite"
   steps:
-  - name: Setup Gradle
-    uses: gradle/gradle-build-action@main
-    with:
-      cache-read-only: true
+  - run: echo "This isn't a real action. See the various nested actions in the README"
+    shell: bash
 
 branding:
   icon: 'box'
-  color: 'gray-dark'
+  color: 'blue'

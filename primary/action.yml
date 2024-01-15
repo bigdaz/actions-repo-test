@@ -1,0 +1,23 @@
+name: Simple setup-gradle action
+description: This is here to test GitHub actions in the marketplace
+
+inputs:
+  test-intput:
+    description: Test input parameter
+    required: false
+
+outputs:
+  test-output:
+    description: Test action output
+
+runs:
+  using: "composite"
+  steps:
+  - name: Setup Gradle
+    uses: gradle/gradle-build-action@main
+    with:
+      cache-read-only: true
+
+branding:
+  icon: 'box'
+  color: 'gray-dark'
